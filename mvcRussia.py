@@ -6,7 +6,7 @@
 #    By: dsandshr <dsandshr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/07/11 01:16:58 by dsandshr          #+#    #+#              #
-#    Updated: 2020/07/11 01:29:16 by dsandshr         ###   ########.fr        #
+#    Updated: 2020/07/12 12:14:57 by dsandshr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ def load_data(nrows): # Функция загрузки нужной инфор�
 data = load_data(322518)
 
 
-st.header("How many collisions occur during a given time of year?")
+st.header("How many collisions occur during a given year?")
 year = st.slider("Year to look at", 2016, 2018) # Слайдер времени     Этот блок кода отвечает за выбор года
 data['years'] = data['date/time'].dt.year 
 
